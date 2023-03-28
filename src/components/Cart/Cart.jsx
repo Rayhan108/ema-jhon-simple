@@ -6,9 +6,9 @@ const Cart = ({ cart }) => {
   let totalShiping = 0;
   let quantity=0;
   for (const product of cart) {
-    if(product.quantity===0){
-        product.quantity=1;
-    }
+    // if(product.quantity===0){
+    //     product.quantity=1;
+    // }
     // console.log(product.price)
     totalPrice += product.price*product.quantity;
     totalShiping += product.shipping;
