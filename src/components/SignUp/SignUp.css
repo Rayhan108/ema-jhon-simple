@@ -24,3 +24,11 @@ border: 1px solid #95A0A7;
 .hr2{
     margin-left: 50px;
 }
+.error{
+    color: red;
+    font-size: 15px;
+}
+.success{
+    color: green;
+    font-size: 15px;
+}
