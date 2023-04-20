@@ -14,7 +14,7 @@ const Shop = () => {
         .then(res=>res.json())
         .then(data=>setProducts(data))
     },[])
-
+// console.log(products);
     useEffect(()=>{
         const storedCart = getShoppingCart();
         const savedCart =[];
