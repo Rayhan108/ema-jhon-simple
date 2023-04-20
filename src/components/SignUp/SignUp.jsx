@@ -20,13 +20,14 @@ const SignUp = () => {
 setError('Password Did not match.Try again');
 return;
     }else if(password.length<6){
-        setError('Password must be six charecters or more');
+        setError('Password must be six charecters or longer');
         return;
     }
     createUser(email,password)
     .then(result=>{
         const loggedUser = result.user;
         console.log(loggedUser);
+        form.reset()
         setSuccess('Account has been created successfully')
     })
     .catch(error=>{
